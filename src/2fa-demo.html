@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>WebauthN demo</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="app">
+      <div class="topRow">Second factor authentication demo</div>
+      <br/>
+      <br/>
+      <div class="wrapper_left">
+        <span class="contentRow">
+          username: <input id="username" value="2fa-tester@mel.ubc" disabled></input>          
+        </span>
+        <span class="contentRow">
+          password: <input id="password" value="123456"></input>       
+        </span>
+        <br/>
+        <br/>
+        <span class="contentRowLeft">
+          <button id="upnlogin">upn login</button>
+        </span>
+
+        <span class="contentRow">
+          <br/>
+
+          <div id="2fa-instruction" style="font-style: italic; color: grey;">You have to log in with UPN before activating 2FA with FIDO2 authentication</div>
+        </span>
+        <br/>
+        <br/>
+        <span class="contentRowLeft">
+          <button id="register" style="display: none;">register</button>
+          <button id="login" style="display: none;">login</button>
+        </span>
+        <div>&nbsp;</div>
+        <hr>
+
+        <div id="logId" class="log">Logged messages:</div>
+      </div>
+      <div class="wrapper_center">
+        <br/>
+      </div>
+      <div class="wrapper_right" id ="messageId">
+      </div>
+    <div>
+    <script src="./main.js"></script>
+  </body>
+</html>
