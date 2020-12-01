@@ -31,4 +31,4 @@ To enable this option, setting "enable2FAWithFido2" must be set to True.
 
 
 ### References
-1. Thanks to Wallix, this project used his [library](https://github.com/wallix/webauthn) to call the CTAP APIs
+1. Thanks to Wallix, this project used his [library](https://github.com/wallix/webauthn) to call the WebAuthN APIs
