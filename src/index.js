@@ -139,12 +139,12 @@ loginButton.onclick = async () => {
 };
 
 async function doLogin(assertionRequest){
-    appendMessage('Assertion request/login request', assertionRequest);
+    appendMessage('Assertion request/login challenge request', assertionRequest);
     appendLog('- Server send login challenge request to client.');
 
     const credentials = await solveLoginChallenge(assertionRequest);
 
-    appendMessage('Assertion response/login response', credentials);
+    appendMessage('Assertion response/login challenge response', credentials);
     appendLog('- Authenticate with external authenticator succeeded. ')
     appendLog('- Client send login challenge response to server.');
     
